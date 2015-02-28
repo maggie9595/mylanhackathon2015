@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :medications
+
+  resources :prescriptions
+
+  resources :contacts
+
   resources :patients
 
   # The priority is based upon order of creation: first created -> highest priority.
