@@ -11,7 +11,7 @@
 </p>
 
 <p>
-  <strong>Prod number:</strong>
+  <strong>Product number:</strong>
   <%= @medication.prod_number %>
 </p>
 
@@ -26,7 +26,7 @@
 </p>
 
 <p>
-  <strong>Te code:</strong>
+  <strong>TE Code:</strong>
   <%= @medication.TE_code %>
 </p>
 
@@ -36,4 +36,5 @@
 </p>
 
 <%= link_to 'Edit', edit_medication_path(@medication) %> |
+<%= link_to "Delete", @medication, method: :delete, data: { confirm: 'Are you sure you wish to delete this medication?' } %> |
 <%= link_to 'Back', medications_path %>
