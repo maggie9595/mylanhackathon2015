@@ -1,15 +1,14 @@
 function resizeContent() {
     $height = $(window).height();
-    $desiredHeight = $('body .scroll').height() + (32);
-    $('body .banner').height($height-$desiredHeight);
-    
+    $('body .banner').height($height);
+    $('body .banner_overlay').css("top",($height/4));
 }
 
 function setRandomBackgroundImage(){
-	//var images = 8;
-	//var number = Math.floor(Math.random(1) * images) + 1;
-	//var link = "url(/static/app/content/frontpage/image" + number + ".jpg)"; 
-	//$( '#top' ).css("background-image",link);
+	var images = 8;
+	var number = Math.floor(Math.random(1) * images) + 1;
+	var link = "url(/static/app/content/frontpage/image" + number + ".jpg)"; 
+	$( '#top' ).css("background-image",link);
 }
 
 $(document).ready(function(){
@@ -32,5 +31,4 @@ $(document).ready(function(){
 	        window.location.hash = target;
 	    });
 	});
-	
 });
