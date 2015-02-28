@@ -13,6 +13,14 @@ textarea, input {
 	outline: none;
 }
 
+hr {
+  border-top: 1px dotted rgba(255,255,255,0.5);
+  background-color: none;
+  height: 1px;
+  margin: 10 0 5 0px;
+  
+}
+
 #searchbar{
 	position:relative;
 	top:-3px;
@@ -40,6 +48,9 @@ body{
 	clear:both;
 	background-color:#ffc107;
 	display:inline-block;
-	margin:32 16 32 16px;
 	font-weight:600;
+}
+
+.small_link{
+	font-size:12px;
 }
