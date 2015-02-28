@@ -3,4 +3,5 @@
 <%= render 'form' %>
 
 <%= link_to 'Show', @prescription %> |
+<%= link_to "Delete", @medication, method: :delete, data: { confirm: 'Are you sure you wish to delete this medication?' } %> |
 <%= link_to 'Back', prescriptions_path %>

@@ -1,5 +1,7 @@
-<h1>Listing patients</h1>
+<h1>Home Page</h1>
 
+<%-# commented out code with if false from here down -%>
+<% if false %>
 <table>
   <thead>
     <tr>
@@ -13,7 +15,7 @@
   </thead>
 
   <tbody>
-    <% @patients.alphabetical.each do |patient| %>
+    <% @patients.each do |patient| %>
       <tr>
         <td><%= patient.first_name %></td>
         <td><%= patient.last_name %></td>
@@ -30,3 +32,4 @@
 <br>
 
 <%= link_to 'New Patient', new_patient_path %>
+<% end %>
