@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  patient_id: MyString
+  dosage: MyString
+  time: 2015-02-28 14:23:21
+  active: false
+  medication_id: MyString
+
+two:
+  patient_id: MyString
+  dosage: MyString
+  time: 2015-02-28 14:23:21
+  active: false
+  medication_id: MyString
