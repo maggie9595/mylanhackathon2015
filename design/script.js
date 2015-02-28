@@ -1,8 +1,8 @@
+
 function resizeContent() {
-    $height = $(window).height();
-    $desiredHeight = $('body .scroll').height() + (32);
-    $('body .banner').height($height-$desiredHeight);
-    
+		$height = $(window).height() - 143;
+    $('body .banner').height($height);
+    console.log($height)
 }
 
 function setRandomBackgroundImage(){
@@ -16,10 +16,6 @@ $(document).ready(function(){
     resizeContent();
     setRandomBackgroundImage();
 
-    $(window).resize(function() {
-        resizeContent();
-    });
-
     $('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
 
@@ -32,5 +28,11 @@ $(document).ready(function(){
 	        window.location.hash = target;
 	    });
 	});
-	
+	$('body').on({
+		'mousewheel': function(e) {
+    	if (e.target.id == 'el') return;
+    	e.preventDefault();
+    	e.stopPropagation();
+    }
+})
 });
