@@ -8,7 +8,8 @@ a{
 	color: inherit;
 }
 body{
-	font-family: 'Open Sans' sans-serif;
+	font-family: 'Open Sans Condensed' sans-serif;
+	font-size:18px;
 }
 .logo{
 	margin:12px;
@@ -20,4 +21,12 @@ body{
 	height:1000px;
 	margin-left:auto;
 	margin-right:auto;
+}
+.amber_button{
+	padding:10px 20px 10px 20px;
+	clear:both;
+	background-color:#ffc107;
+	display:inline-block;
+	margin:32px;
+	font-weight:600;
 }

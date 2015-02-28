@@ -1,7 +1,7 @@
 function resizeContent() {
     $height = $(window).height();
     $('body .banner').height($height);
-    $('body .banner_overlay').css("top",($height/4));
+    $('body .banner .overlay').css("top",($height/4 - 100));
 }
 
 function setRandomBackgroundImage(){
