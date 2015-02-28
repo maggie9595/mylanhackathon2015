@@ -4,14 +4,16 @@ function resizeContent() {
     $('body .banner .overlay').css("top",($height/4 - 100));
 }
 
-function setRandomBackgroundImage(){
-	var images = 8;
-	var number = Math.floor(Math.random(1) * images) + 1;
-	var link = "url(/static/app/content/frontpage/image" + number + ".jpg)"; 
-	$( '#top' ).css("background-image",link);
+function indexTransition(){
+	$('#one').fadeOut(300, function(){ $(this).remove(); indexTransition2()});
+}
+
+function indexTransition2(){
+	$('#two').fadeIn(300,function(){});
 }
 
 $(document).ready(function(){
+		$('#two').hide();
     resizeContent();
     setRandomBackgroundImage();
 

@@ -14,14 +14,19 @@
 		<img border="0" width="100px" src="amberlogo.svg">
 		</a>
   </div>
-  <div class="overlay">
+  <div class="overlay" id="one">
 	  <center>
 	  <div class="title">What is really in your medicine?</div>
-	  <a href=""><div class="amber_button">GET STARTED</div></a>
+	  <a onclick="indexTransition()" href="#"><div class="amber_button">GET STARTED</div></a>
 	  </center>
-
   </div>
-
+  <div class="overlay" id="two" style="background-color:#00bcd4;">
+	  <center>
+	  	Search for your medicine to compare ratings between different producers.
+			<input type="text" id="searchbar" size="30"></input>
+			<a onclick=""><div class="amber_button">SEARCH</div></a>
+	  </center>
+  </div>
 
 </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

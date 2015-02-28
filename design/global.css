@@ -2,14 +2,27 @@
 	margin:0px;
 	padding:0px;
 	border:0px;
+
 }
 a{
 	text-decoration: none;
 	color: inherit;
 }
+
+textarea, input {
+	outline: none;
+}
+
+#searchbar{
+	position:relative;
+	top:-3px;
+	padding:15px;
+}
+
 body{
 	font-family: 'Open Sans Condensed' sans-serif;
 	font-size:18px;
+	-webkit-appearance:none 
 }
 .logo{
 	margin:12px;
@@ -27,6 +40,6 @@ body{
 	clear:both;
 	background-color:#ffc107;
 	display:inline-block;
-	margin:32px;
+	margin:32 16 32 16px;
 	font-weight:600;
 }
