@@ -26,4 +26,5 @@
 </p>
 
 <%= link_to 'Edit', edit_prescription_path(@prescription) %> |
+<%= link_to "Delete", @prescription, method: :delete, data: { confirm: 'Are you sure you wish to delete this prescription?' } %> |
 <%= link_to 'Back', prescriptions_path %>
