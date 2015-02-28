@@ -1,17 +1,9 @@
 .banner{
 	background-color:#00838f;
-}
-
-.scroll{
-	height:16px;
-	padding:16px;
-	background-color: #006064;
-	font-size:14px;
-	font-weight:300;
-	letter-spacing: 2px;
-	color:white;
+	height:800px;
 }
 
 #start{
 	background-color:white;
+	height:800px;
 }
