@@ -1,8 +1,8 @@
 function resizeContent() {
     $height = $(window).height();
-    $('body .banner').height($height-48);
-    //$('body .more_info').height($height);
-    //$('body .banner_overlay').css("top",($height/4));
+    $desiredHeight = $('body .scroll').height() + (32);
+    $('body .banner').height($height-$desiredHeight);
+    
 }
 
 function setRandomBackgroundImage(){
