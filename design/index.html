@@ -8,6 +8,24 @@
 
 </head>
 <body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1554175341498731',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 <div class="banner">
 	<div class="logo">
 		<a href="/index.html">
@@ -22,7 +40,12 @@
 	  <center>
 	  <div class="title">What's really in your medicine?</div>
 	  <a onclick="indexTransition()" href="#">
-	  <div class="amber_button" style="margin-top:16px;">GET STARTED</div></a>
+	  <div class="amber_button" style="margin-top:16px;">GET STARTED<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div></div></a>
 	  </center>
   </div>
   <div class="overlay" id="two" style="background-color:#00bcd4;">
