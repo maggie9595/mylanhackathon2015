@@ -1,0 +1,383 @@
+.pillbox ul{
+	margin:0px;
+	padding:0px;
+  list-style-type: none;
+}
+
+.pillbox li{
+	display:inline-block;
+}
+
+.pillbox .drug_title{
+	font-size:24px;
+	font-weight:700;
+	color:white;
+}
+
+.pill{
+	background-color:#ffb300;
+	width:200px;
+	padding:10px;
+	margin:12px 12px 12px 0px;
+}
+*{
+	margin:0px;
+	padding:0px;
+	border:0px;
+
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+textarea, input {
+	outline: none;
+}
+
+.header{
+	height:80px;
+	background-color:#00bcd4;
+}
+
+#menu{
+	display:inline-block;
+	float:right;
+	margin:20 12 12 12px;
+}
+
+#menu li{
+	display:inline-block;
+	float:right;
+	background-color:none;
+	padding:10 20 10 20px;
+	margin-right:4px;
+	color:white;
+	border: 1px solid;
+	font-size:14px;
+}
+
+hr {
+  border-top: 1px dotted rgba(255,255,255,0.5);
+  background-color: none;
+  height: 1px;
+  margin: 10 0 5 0px;
+  
+}
+
+#searchbar{
+	position:relative;
+	top:-3px;
+	padding:15px;
+}
+
+body{
+	font-family: 'Open Sans Condensed' sans-serif;
+	font-size:18px;
+	background-color:#00838f;
+	-webkit-appearance:none 
+}
+.logo{
+	display:inline-block;
+	padding:12px;
+}
+.container{
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.amber_button{
+	color:white;
+	padding:10px 20px 10px 20px;
+	clear:both;
+	background-color:#ffc107;
+	display:inline-block;
+	font-weight:600;
+}
+
+.small_link{
+	font-size:12px;
+}
+
+.title{
+	padding:16px;
+	font-weight: 700;
+	font-size:24px;
+	color:white;
+}
+.subtitle{
+	padding:16px;
+	font-weight: 700;
+	font-size:16px;
+	color:#ff6f00;
+}
+.description{
+	padding:0 16 16 16px;
+	font-weight: 300;
+	font-size:14px;
+	color:black;	
+}
+.footer{
+	height:300px;
+	color:#00838f;
+	font-weight:700;
+	font-size:14px;
+	margin-top:64px;
+	background-color: #006064;
+}
+.banner{
+	background-image: url("drugs.jpg");
+}
+
+.overlay{
+	position:relative;
+	width:500px;
+	height:auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	padding:30px;
+	color:white;
+}
+
+.title{
+	display:table;
+	padding:32px;
+	font-size:32px;
+	background-color:#00bcd4;
+}
+.results_container{
+	margin:10px;
+	padding:20px;
+	width:960px;
+	margin-left: auto;
+	margin-right:auto;
+	background-color:white;
+}
+
+td, th{
+	font-size:16px;
+	padding:5 10 5 10px;
+	text-align: center;
+}
+
+.search_query{
+	margin:30 0 10 0px;
+	padding:20px;
+	width:960px;
+	margin-left: auto;
+	margin-right:auto;
+	background-color:#ff6f00;
+	font-size:24px;
+	color:white;
+}
+
+.entry_name{
+	font-size:16px;
+}
+.entry_active{
+	font-size:16px;
+	color:gray;
+}
+.entry_producer{
+	margin-left:16px;
+	font-weight:700;
+	font-size:16px;
+}
+/* line 1, /Users/allysorge/Library/Mobile Documents/com~apple~CloudDocs/mylanhackathon2015/Amber/app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/allysorge/Library/Mobile Documents/com~apple~CloudDocs/mylanhackathon2015/Amber/app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/allysorge/Library/Mobile Documents/com~apple~CloudDocs/mylanhackathon2015/Amber/app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/allysorge/Library/Mobile Documents/com~apple~CloudDocs/mylanhackathon2015/Amber/app/assets/stylesheets/scaffolds.css.scss */
+a {
+  color: #000;
+}
+/* line 23, /Users/allysorge/Library/Mobile Documents/com~apple~CloudDocs/mylanhackathon2015/Amber/app/assets/stylesheets/scaffolds.css.scss */
+a:visited {
+  color: #666;
+}
+/* line 26, /Users/allysorge/Library/Mobile Documents/com~apple~CloudDocs/mylanhackathon2015/Amber/app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 33, /Users/allysorge/Library/Mobile Documents/com~apple~CloudDocs/mylanhackathon2015/Amber/app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 38, /Users/allysorge/Library/Mobile Documents/com~apple~CloudDocs/mylanhackathon2015/Amber/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 42, /Users/allysorge/Library/Mobile Documents/com~apple~CloudDocs/mylanhackathon2015/Amber/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 48, /Users/allysorge/Library/Mobile Documents/com~apple~CloudDocs/mylanhackathon2015/Amber/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 55, /Users/allysorge/Library/Mobile Documents/com~apple~CloudDocs/mylanhackathon2015/Amber/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 65, /Users/allysorge/Library/Mobile Documents/com~apple~CloudDocs/mylanhackathon2015/Amber/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+.banner{
+	background-image: url("drugs.jpg");
+}
+
+.overlay{
+	position:relative;
+	width:500px;
+	height:auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	padding:30px;
+	color:white;
+}
+
+.title{
+	display:table;
+	padding:32px;
+	font-size:32px;
+	background-color:#00bcd4;
+}
+
+*{
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+textarea, input {
+	outline: none;
+}
+
+.header{
+	height:80px;
+	background-color:#00bcd4;
+}
+
+#menu{
+	display:inline-block;
+	float:right;
+	margin:24px 12px 12px 12px;
+}
+
+#menu li{
+	display:inline-block;
+	float:right;
+	background-color:rgba(0,0,0,0);
+	padding:10px 20px 10px 20px !important;
+	margin-right:4px;
+	color:white;
+	border: 1px solid;
+	font-size:14px;
+}
+
+hr {
+  border-top: 1px dotted rgba(255,255,255,0.5);
+  background-color: none;
+  height: 1px;
+  margin: 10px 0px 5px 0px;
+  
+}
+
+#searchbar{
+	position:relative;
+	top:-3px;
+	padding:15px;
+}
+
+body{
+	font-family: 'Open Sans Condensed' sans-serif;
+	font-size:18px;
+	background-color:#00838f;
+	-webkit-appearance:none 
+}
+.logo{
+	margin:12px;
+	display:inline-block;
+	padding:12px;
+}
+.container{
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.amber_button{
+	color:white;
+	padding:10px 20px 10px 20px;
+	clear:both;
+	background-color:#ffc107;
+	display:inline-block;
+	font-weight:600;
+}
+
+.small_link{
+	font-size:12px;
+}
