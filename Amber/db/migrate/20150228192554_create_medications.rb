@@ -1,6 +1,5 @@
 class CreateMedications < ActiveRecord::Migration
 def change
-	drop_table :medications
 create_table :medications do |t|
 t.string :name
 t.string :form

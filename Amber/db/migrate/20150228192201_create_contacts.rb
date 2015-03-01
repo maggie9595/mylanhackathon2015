@@ -1,6 +1,5 @@
 class CreateContacts < ActiveRecord::Migration
 def change
-	drop_table :contacts
 create_table :contacts do |t|
 t.string :first_name
 t.string :last_name
