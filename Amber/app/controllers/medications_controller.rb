@@ -4,7 +4,7 @@ class MedicationsController < ApplicationController
   # GET /medications
   # GET /medications.json
   def index
-    @medications = Medication.all
+    @medications = Medication.alphabetical.all
   end
 
   # GET /medications/1
@@ -61,6 +61,11 @@ class MedicationsController < ApplicationController
     end
   end
 
+  # used for search box
+  def search
+    @medications = Medication.search params[:search]
+  end
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_medication

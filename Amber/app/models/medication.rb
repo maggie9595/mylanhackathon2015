@@ -5,4 +5,5 @@ class Medication < ActiveRecord::Base
   has_many :prescriptions
 
   scope :alphabetical, -> { order('name') }
+
 end
