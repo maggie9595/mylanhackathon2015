@@ -21,7 +21,7 @@ textarea, input {
 #menu{
 	display:inline-block;
 	float:right;
-	margin:24 12 12 12px;
+	margin:20 12 12 12px;
 }
 
 #menu li{
@@ -56,7 +56,6 @@ body{
 	-webkit-appearance:none 
 }
 .logo{
-	margin:12px;
 	display:inline-block;
 	padding:12px;
 }
@@ -76,4 +75,31 @@ body{
 
 .small_link{
 	font-size:12px;
+}
+
+.title{
+	padding:16px;
+	font-weight: 700;
+	font-size:24px;
+	color:white;
+}
+.subtitle{
+	padding:16px;
+	font-weight: 700;
+	font-size:16px;
+	color:#ff6f00;
+}
+.description{
+	padding:0 16 16 16px;
+	font-weight: 300;
+	font-size:14px;
+	color:black;	
+}
+.footer{
+	height:300px;
+	color:#00838f;
+	font-weight:700;
+	font-size:14px;
+	margin-top:64px;
+	background-color: #006064;
 }
