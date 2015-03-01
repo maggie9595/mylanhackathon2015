@@ -6,7 +6,6 @@ class CreateMedications < ActiveRecord::Migration
       t.string :prod_number
       t.string :active_ingredients
       t.string :market_status
-      t.string :TE_code
       t.string :company
 
       t.timestamps
