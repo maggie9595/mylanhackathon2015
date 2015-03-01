@@ -1,8 +1,58 @@
-<h1>Home Page</h1>
+<!-- When submit the form, the view rendered will be the index view of our articles resource -->
+  <%= form_tag(medications_path, :method => "get", class: "navbar-form", id: "search-form") do %>
+    <div class="input-append">
+      <%= text_field_tag :search, params[:search], class: "span2", placeholder: "Search Medications" %>
+      <!-- In order to have the "search" icon int the button, we need to use plain HTML instead 
+           of using a Rails form helper -->
+      <button class="btn" type="submit"><i class="icon-search"></i></button>
+    </div>
+  <% end %>
 
-<div id="search">
-  <%= render :partial => 'medications/search' %>
+<html>
+<head>
+  <title>Amber</title>
+  <link rel="stylesheet" type="text/css" href="global.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<div class="banner">
+  <div class="logo">
+    <a href="/index.html">
+    <img border="0" width="150px" src="amber_light.svg">
+    </a>
+  </div>
+  <ul id="menu">
+    <a href="#"><li>ABOUT</li></a>
+    <a href="#"><li>DASHBOARD</li></a>
+  </ul>
+  <div class="overlay" id="one">
+    <center>
+    <div class="title">What's really in your medicine?</div>
+    <a onclick="indexTransition()" href="#">
+    <div class="amber_button" style="margin-top:16px;">GET STARTED</div></a>
+    </center>
+  </div>
+  <div class="overlay" id="two" style="background-color:#00bcd4;">
+    Search for your medicine and compare ratings between different producers.
+    <div style="margin-top:16px">
+      <input type="text" placeholder="advil, acetaminophin, mylan" id="searchbar" size="44"></input>
+      <a onclick="" href="#"><div class="amber_button" style="margin-left:10px;">SEARCH</div></a><br>
+    </div>
+    <hr>
+    <a href="#" class="small_link">LOGIN /</a> 
+    <a href="#" class="small_link">SIGN UP /</a>
+    <a href="#" class="small_link">LEARN MORE</a>
+  </div>
+
 </div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
 
 <%-# commented out code with if false from here down -%>
 <% if false %>

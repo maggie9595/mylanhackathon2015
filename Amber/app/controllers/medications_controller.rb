@@ -4,7 +4,11 @@ class MedicationsController < ApplicationController
   # GET /medications
   # GET /medications.json
   def index
-    @medications = Medication.alphabetical.all
+    if params[:search]
+      @medications = Medication.search(params[:search]).order("name")
+    else
+      @medications = Medication.alphabetical.all
+    end
   end
 
   # GET /medications/1
@@ -59,11 +63,6 @@ class MedicationsController < ApplicationController
       format.html { redirect_to medications_url, notice: 'Medication was successfully destroyed.' }
       format.json { head :no_content }
     end
-  end
-
-  # used for search box
-  def search
-    @medications = Medication.search params[:search]
   end
   
   private
