@@ -16,7 +16,7 @@ namespace :db do
 	      		form = medData[2]
 	      		
 	      		market_status = medData[4]
-	      		tecode = medData[5]
+	      		
 	      		
 	      		name = medData[7]
 	      		active_ingredients = medData[8]
@@ -25,7 +25,7 @@ namespace :db do
 	      			m.name = name
 	      			m.form = form
 	      			m.market_status = market_status
-	      			m.TE_code = tecode
+	      			
 	      			m.active_ingredients = active_ingredients
 	      			m.prod_number = prod_number
 	      			m.company = "unknown"
