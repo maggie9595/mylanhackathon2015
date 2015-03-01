@@ -7,6 +7,7 @@ class CreateApplications < ActiveRecord::Migration
       t.string :active_ingredients
       t.string :market_status
       t.string :company
+      t.integer :medication_id
 
       t.timestamps
     end
@@ -14,4 +15,6 @@ class CreateApplications < ActiveRecord::Migration
     create_table :applications do |t|
     	t.belongs_to :medications
   end
+
+  add_index :applications, :medication_id
 end
