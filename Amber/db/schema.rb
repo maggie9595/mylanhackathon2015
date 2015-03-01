@@ -45,7 +45,6 @@ ActiveRecord::Schema.define(version: 20150301032252) do
     t.string   "prod_number"
     t.string   "active_ingredients"
     t.string   "market_status"
-    t.string   "TE_code"
     t.string   "company_id"
     t.datetime "created_at"
     t.datetime "updated_at"
