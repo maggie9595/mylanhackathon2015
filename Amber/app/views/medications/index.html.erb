@@ -22,7 +22,9 @@
         <td><%= medication.prod_number %></td>
         <td><%= medication.active_ingredients %></td>
         <td><%= medication.market_status %></td>
-        <td><%= medication.company %></td>
+
+        <td><%= application.company %></td>
+
         <td><%= link_to 'Show', medication %></td>
         <td><%= link_to 'Edit', edit_medication_path(medication) %></td>
         <td><%= link_to 'Delete', medication, method: :delete, data: { confirm: 'Are you sure?' } %></td>
