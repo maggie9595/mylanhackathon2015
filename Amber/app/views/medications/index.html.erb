@@ -21,6 +21,7 @@
         <td><%= medication.prod_number %></td>
         <td><%= medication.active_ingredients.capitalize %></td>
         <td><%= medication.market_status.capitalize %></td>
+      
         <td><%= link_to 'Show', medication %></td>
         <td><%= link_to 'Edit', edit_medication_path(medication) %></td>
         <td><%= link_to 'Delete', medication, method: :delete, data: { confirm: 'Are you sure?' } %></td>
