@@ -3,6 +3,7 @@ class Medication < ActiveRecord::Base
   # Relationships
   # -----------------------------
   has_many :prescriptions
+  has_many :applications
 
   scope :alphabetical, -> { order('name') }
 
