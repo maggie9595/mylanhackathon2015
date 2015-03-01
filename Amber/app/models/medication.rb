@@ -3,7 +3,7 @@ class Medication < ActiveRecord::Base
   # Relationships
   # -----------------------------
   has_many :prescriptions
-  has_many :companies
+  belongs_to :company
 
   scope :alphabetical, -> { order('name') }
 

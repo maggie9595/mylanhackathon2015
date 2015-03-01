@@ -32,12 +32,8 @@
     <%= f.text_field :market_status %>
   </div>
   <div class="field">
-    <%= f.label "TE code" %><br>
-    <%= f.text_field :TE_code %>
-  </div>
-  <div class="field">
-    <%= f.label :company %><br>
-    <%= f.text_field :company %>
+    <%= f.label :company_id %><br>
+    <%= f.collection_select :company_id, Company.alphabetical, :id, :name, prompt: true %>
   </div>
   <div class="actions">
     <%= f.submit %>

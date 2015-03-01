@@ -25,7 +25,6 @@ ActiveRecord::Schema.define(version: 20150301032252) do
 
   create_table "companies", force: true do |t|
     t.string   "name"
-    t.string   "medication_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -47,7 +46,7 @@ ActiveRecord::Schema.define(version: 20150301032252) do
     t.string   "active_ingredients"
     t.string   "market_status"
     t.string   "TE_code"
-    t.string   "company"
+    t.string   "company_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

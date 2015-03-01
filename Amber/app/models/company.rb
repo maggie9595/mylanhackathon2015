@@ -1,3 +1,5 @@
 class Company < ActiveRecord::Base
-	belongs_to :medication
+	has_many :medications
+
+	scope :alphabetical, -> { order('name') }
 end
