@@ -15,7 +15,6 @@ function indexTransition2(){
 $(document).ready(function(){
 		$('#two').hide();
     resizeContent();
-    setRandomBackgroundImage();
 
     $(window).resize(function() {
         resizeContent();
