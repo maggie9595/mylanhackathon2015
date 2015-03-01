@@ -3,7 +3,6 @@
 <table>
   <thead>
     <tr>
-      <th>Patient Name</th>
       <th>Dosage</th>
       <th>Time</th>
       <th>Active</th>
@@ -15,11 +14,10 @@
   <tbody>
     <% @prescriptions.each do |prescription| %>
       <tr>
-        <td><%= prescription.patient.proper_name %></td>
         <td><%= prescription.dosage %></td>
         <td><%= prescription.time %></td>
         <td><%= prescription.active %></td>
-        <td><%= prescription.medication.name %></td>
+        <td><%= prescription.medication_id %></td>
         <td><%= link_to 'Show', prescription %></td>
         <td><%= link_to 'Edit', edit_prescription_path(prescription) %></td>
         <td><%= link_to 'Delete', prescription, method: :delete, data: { confirm: 'Are you sure?' } %></td>
